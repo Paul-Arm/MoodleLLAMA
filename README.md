@@ -2,21 +2,17 @@
 href="https://www.flaticon.com/free-icons/mortarboard" target="_blank" rel="noopener noreferrer"
 title="Mortarboard icons created by itim2101 - Flaticon" ><img src="./extension/icon.png" alt="Mortarboard icons created by itim2101 - Flaticon" width="150" style="display:block; margin:auto;"></a></p>
 
-# MoodleGPT 1.1.1
+# MoodleLLAMA 0.1
 
-This extension allows you to hide CHAT-GPT in a Moodle quiz. You just need to click on the question you want to solve, and CHAT-GPT will automatically provide the answer. However, one needs to be careful because as we know, CHAT-GPT can make errors especially in calculations.
+This extension allows you to hide Cloudflare AI worker in a Moodle quiz. You just need to click on the question you want to solve, and CHAT-GPT will automatically provide the answer. However, one needs to be careful because as we know, CHAT-GPT can make errors especially in calculations.
 
-## Chrome Webstore
 
-Find the extension on the Chrome Webstore right [here](https://chrome.google.com/webstore/detail/moodlegpt/fgiepdkoifhpcgdhbiikpgdapjdoemko)
 
 ## Summary
 
 - [MoodleGPT 1.1.1](#moodlegpt-111)
-  - [Chrome Webstore](#chrome-webstore)
   - [Summary](#summary)
   - [Disclaimer !](#disclaimer-)
-  - [Donate](#donate)
   - [Update](#update)
   - [Set up](#set-up)
   - [Mode](#mode)
@@ -41,11 +37,6 @@ Find the extension on the Chrome Webstore right [here](https://chrome.google.com
 
 I hereby declare that I am not responsible for any misuse or illegal activities carried out using my program. The code is provided for educational and research purposes only, and any use of it outside of these purposes is at the user's own risk.
 
-## Donate
-
-Will be a pleasure if you want to support this project :). I'm alone working on this project and I'm still a student.
-<br/>
-<a href="https://www.buymeacoffee.com/yoannchbpro" target="_blank" rel="noopener noreferrer"><img src="./assets/bmc-button.png" alt="Mortarboard icons created by itim2101 - Flaticon" width="150"></a>
 
 ## Update
 
@@ -161,6 +152,3 @@ To know if the answer has been copied to the clipboard, you can look at the titl
 - <b>Solution 1</b>: Go on this [moodle demo page](https://moodle.org/demo).
 - <b>Solution 2</b>: Run the `index.html` file located in the `test/fake-moodle` folder.
 
-## Beta version with advanced features
-
-If you're interested in accessing advanced features ahead of their official release, please consider downloading the extension from the [dev branch](https://github.com/yoannchb-pro/MoodleGPT/tree/dev). However, please be aware that this branch is under development and may contain bugs. If you encounter any issues, don't hesitate to contact me or create an issue on GitHub. Your feedback is invaluable in helping us improve the extension.
