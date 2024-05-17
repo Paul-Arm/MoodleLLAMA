@@ -3,7 +3,7 @@
 const saveBtn = document.querySelector('.save');
 
 // inputs id
-const inputsText = ['apiKey', 'code', 'model'];
+const inputsText = ['apiKey', 'code', 'model','cloudflareAccountId','apiProvider'];
 const inputsCheckbox = [
   'logs',
   'title',
@@ -18,7 +18,7 @@ const inputsCheckbox = [
 
 // Save the configuration
 saveBtn.addEventListener('click', function () {
-  const [apiKey, code, model] = inputsText.map(selector =>
+  const [apiKey, code, model, cloudflareAccountId, apiProvider ] = inputsText.map(selector =>
     document.querySelector('#' + selector).value.trim()
   );
   const [logs, title, cursor, typing, mouseover, infinite, timeout, history, includeImages] =
@@ -43,6 +43,8 @@ saveBtn.addEventListener('click', function () {
   chrome.storage.sync.set({
     moodleGPT: {
       apiKey,
+      apiProvider,
+      cloudflareAccountId,
       code,
       model,
       logs,
@@ -54,7 +56,8 @@ saveBtn.addEventListener('click', function () {
       timeout,
       history,
       includeImages,
-      mode: actualMode
+      mode: actualMode,
+      apiProvider,
     }
   });
 

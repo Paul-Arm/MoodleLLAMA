@@ -1,5 +1,6 @@
 type Config = {
   apiKey: string;
+  cloudflareAccountId?: string;
   model: string;
   code?: string;
   infinite?: boolean;
@@ -11,6 +12,8 @@ type Config = {
   timeout?: boolean;
   history?: boolean;
   includeImages?: boolean;
+  apiProvider?: 'openai' | 'cloudflare';
+
   mode?: 'autocomplete' | 'question-to-answer' | 'clipboard';
 };
 

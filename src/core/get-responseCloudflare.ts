@@ -21,17 +21,20 @@ async function getChatGPTResponse(
   // Including the instructions to the AI, the images as base64 if needed, the question and the past conversation if history is set to true
   const contentHandler = await getContentWithHistory(config, questionElement, question);
 
-  const req = await fetch(`https://api.cloudflare.com/client/v4/accounts/${config.accountId}/ai/run/@cf/meta/${config.scriptName}`, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${config.apiKey}`
-    },
-    signal: config.timeout ? controller.signal : null,
-    body: JSON.stringify({
-      messages: contentHandler.messages
-    })
-  });
+  const req = await fetch(
+    `https://api.cloudflare.com/client/v4/accounts/${config.accountId}/ai/run/@cf/meta/${config.scriptName}`,
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${config.apiKey}`
+      },
+      signal: config.timeout ? controller.signal : null,
+      body: JSON.stringify({
+        messages: contentHandler.messages
+      })
+    }
+  );
 
   clearTimeout(timeoutControler);
 
